@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head> <title> Balto Budget Tool </title>
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/money.png">
 <style>
 ul {
   list-style-type:none;
@@ -8,29 +9,80 @@ ul {
 li {
   float: left;
 }
+body{
+  background-color: #f5683d;
+  padding-top:10vh;
+
+}
+.form-container{
+  width:250px;
+  height:auto;
+  padding:20px 30px;
+  background-color: #bb5588;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #000;
+  margin:auto;
+  list-style-type: none;
+}
+
+ul.list{
+list-style-type: none;
+text-align: center;
+}
+ul.list li{
+width: 250px;
+}
+ul.list li input{
+  width:250px;
+
+}
 </style>
 </head>
 <body>
-
+<!--
+  This is the navigation bar.
+-->
+<div class="navbar">
+<nav>
 <ul>
-  <li>Home</li> 
-  <li>Gizmos</li> 
-  <li>Rewards</li>
-  <li>Trends</li>
-  <li> Account Info </li>
-  <li> Sign In </li>
+  <li><a href="/">Home</a></li> 
+  <li><a href="/gizmos">Gizmos</a></li> 
+  <li><a href="/rewards">Rewards</a></li>
+  <li><a href="/trends">Trends</a></li>
+  <li><a href="/account">Info</a></li>
+  <li><a href="/login">Login</a></li>
 </ul>
-
-<img src="images/prints.png"> 
+</nav>  
+</div>
+<br>
+<!--
+  This is where the logo should be displayed
+-->
+<img src="assets/prints.png"> 
 <hr>
 <h1> Balto </h1>
 <h2><i>Awaken Growth. Unleash Dominion. </h2> 
 <hr>
-<p> I need to turn this section into a sign in box.</p> 
+<p> I need to turn this section into a <a href="/login">sign in</a>box.</p> 
+
+
+<div class="form-container">
+<  ul class="list">
+<li>Member Login</li>
+<li><input type="text" name="User Name" placeholder="User Name"></li>
+<li><input type="password" name="Password" placeholder="........."></li>
+<li><input type="button" name="Submit"value="Submit"></li>
+<li>Forgot Password?</li>
+  </ul>
+</div>
+
+<br>
+
 <!--
 I am a comment, you will 
 not see me on the actual page. 
 -->
+<br>
 <p> I would like a slideshow here.</p>
 <p>privacy policy   contact us   FAQ's. App options </p>
 <p> please note the following as beneficial assistance to creating this website: <a href= "https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" target="_blank"> Code the Web </a> </p> 
