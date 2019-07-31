@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head> <title> Balto Budget Tool </title>
   <link rel="icon" type="image/png" sizes="64x64" href="/assets/money.png">
@@ -9,33 +9,37 @@
   background-color:rgb(134, 182, 197);
   position: relative;
   text-align: center;
-  padding:20px 30px;
+  padding:10px 10px;
   line-height: 32px;
 }
 
 ul.nav {
   max-width: 92%;
   margin-top: 15px;
-  list-style-type:none;
+  list-style-type: none;
   text-align: center;
+  display: inline-table;
 }
 ul.nav li {
-  display: inline;
+  padding: 10px 10px;
+  color:rgb(37, 16, 156);
+  font-variant: small-caps;
   font-size: 16px;
-  margin-bottom:30px;
-  line-height: 10px;
+  margin-bottom:5px;
+  line-height: 5px;
   float: left;
 }
 
 body{
-  background-color:khaki;
+  background-color:rgb(171, 218, 160);
   font-family:"Arial", sans-serif;
 }
 
 header{
+  border-radius: 10px;
   background-color: #d1d6d8;
-  height: 150px;
-  padding:4px;
+  height: 200px;
+  padding:30px;
 }
 
 header h1{
@@ -93,7 +97,7 @@ ul.list li input[type="button"]{
 }
 
 ul.list li:nth-child(5){
-  color:red
+  color:rgb(250, 12, 12)
   }
 </style>
 </head>
@@ -102,29 +106,27 @@ ul.list li:nth-child(5){
   This is the navigation bar.
 -->
 <div class="navbar">
-<nav>
-<ul class="nav">
-  <li><a href="/">Home</a></li> 
-  <li><a href="/gizmos">Gizmos</a></li> 
-  <li><a href="/rewards">Rewards</a></li>
-  <li><a href="/trends">Trends</a></li>
-  <li><a href="/account">Info</a></li>
-  <li><a href="/login">Login</a></li>
-</ul>
-</nav>  
-</div>
-
+    <nav>
+    <ul class="nav">
+      <li><a href="/">Home</a></li> 
+      <li><a href="/gizmos">Gizmos</a></li> 
+      <li><a href="/rewards">Rewards</a></li>
+      <li><a href="/trends">Trends</a></li>
+      <li><a href="/account">Info</a></li>
+      <li><a href="/login">Login</a></li>
+    </ul>
+    </nav>  
+    </div>
 <!--
   This is where the logo should be displayed
 -->
-<br>
-<img src="/assets/prints.png">
 <header>
 <hr>
 <h1> Balto </h1>
 <h2><i>Awaken Growth. Unleash Dominion. </h2> 
 <hr>
 </header>
+    
 
 <div class="form-container">
   <div class="user-img"></div>
@@ -134,7 +136,7 @@ ul.list li:nth-child(5){
 <li><input type="text" name="User Name" placeholder="User Name"></li>
 <li><input type="password" name="Password" placeholder="........."></li>
 <li><input type="button" name="Submit"value="Submit"></li>
-<li>Forgot Password?</li>
+<li><a href="/account">Forgot Password?</a></li>
   </ul>
 </div>
 
